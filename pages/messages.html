@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言墙 - 昙华林旅行资讯</title>
+    <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="sub-header">
+        <a href="../index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> 返回首页
+        </a>
+        <h1>游客留言墙</h1>
+        <p>分享你的昙华林故事</p>
+    </header>
+
+    <main class="messages-content">
+        <section class="message-form-section">
+            <form id="message-form" class="message-form">
+                <textarea placeholder="写下你的游玩体验..." required></textarea>
+                <div class="form-footer">
+                    <div class="mood-selector">
+                        <label>心情：</label>
+                        <button type="button" class="mood-btn" data-mood="happy">😊</button>
+                        <button type="button" class="mood-btn" data-mood="love">😍</button>
+                        <button type="button" class="mood-btn" data-mood="wow">😮</button>
+                    </div>
+                    <button type="submit" class="btn-submit">发布留言</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="messages-wall">
+            <div class="messages-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="happy">开心</button>
+                <button class="filter-btn" data-filter="love">喜爱</button>
+                <button class="filter-btn" data-filter="wow">惊喜</button>
+            </div>
+            <div id="messages-container" class="messages-grid">
+                <!-- 留言内容将通过JavaScript动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="sub-footer">
+        <p>© 2025 昙华林旅行资讯</p>
+    </footer>
+
+    <!-- 在 footer 后，body 结束标签前添加 -->
+        <script src="../js/utils/helpers.js"></script>
+        <script src="../js/components/floatNav.js"></script>
+        <script src="../js/messages.js"></script>
+        <script>
+            new FloatNav();
+        </script>
+    </body>
+    </html>

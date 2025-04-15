@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艺术空间 - 昙华林</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .art-container {
+            padding: 20px;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            font-family: monospace;
+        }
+        .art-section {
+            margin: 20px 0;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .art-section:hover {
+            transform: scale(1.05);
+        }
+        .art-title {
+            font-size: 2em;
+            margin-bottom: 30px;
+            letter-spacing: 5px;
+        }
+        .art-nav {
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+        }
+        .art-item {
+            padding: 15px;
+            border: 1px solid #fff;
+            text-decoration: none;
+            color: #fff;
+        }
+        .art-pattern {
+            font-size: 1.2em;
+            line-height: 1.2;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <div class="art-container">
+        <div class="art-title">
+            ▲ ▼ ◄ ►<br>
+            艺术空间<br>
+            ◆ ◇ ◈ ◉
+        </div>
+        
+        <nav class="art-nav">
+            <a href="cultural.html" class="art-item">
+                <div class="art-pattern">
+                    ╔══════╗
+                    ║文化传承║
+                    ╚══════╝
+                </div>
+            </a>
+            
+            <a href="photo.html" class="art-item">
+                <div class="art-pattern">
+                    ┌─┐ ┌─┐
+                    │相│-│影│
+                    └─┘ └─┘
+                </div>
+            </a>
+            
+            <a href="stories.html" class="art-item">
+                <div class="art-pattern">
+                    ▓▒░故事░▒▓
+                    ▓▒░空间░▒▓
+                </div>
+            </a>
+            
+            <a href="events.html" class="art-item">
+                <div class="art-pattern">
+                    ╭─────╮
+                    │活动集│
+                    ╰─────╯
+                </div>
+            </a>
+        </nav>
+        
+        <div class="art-section">
+            <div class="art-pattern">
+                ※ ※ ※ ※ ※
+                艺术，是生活的诗
+                ※ ※ ※ ※ ※
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.art-item').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.backgroundColor = '#333';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
+</body>
+</html>

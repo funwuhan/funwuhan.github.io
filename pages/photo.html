@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影服务 - 昙华林旅行资讯</title>
+    <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="sub-header">
+        <a href="../index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> 返回首页
+        </a>
+        <h1>昙华林摄影服务</h1>
+        <p>记录最美的地巷时光</p>
+    </header>
+
+    <main class="photo-content">
+        <section class="photographer-intro">
+            <div class="photographer-profile">
+                <img src="../images/photographer.jpg" alt="摄影师照片" class="profile-img">
+                <h2>小林</h2>
+                <p>专业摄影师 | 5年经验</p>
+            </div>
+            <div class="service-intro">
+                <h3>服务介绍</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-camera"></i> 街景写真</li>
+                    <li><i class="fas fa-store-alt"></i> 店铺形象</li>
+                    <li><i class="fas fa-users"></i> 活动跟拍</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <h2>预约拍摄</h2>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label>拍摄类型</label>
+                    <select required>
+                        <option value="">请选择拍摄类型</option>
+                        <option value="street">街景写真</option>
+                        <option value="shop">店铺形象</option>
+                        <option value="event">活动跟拍</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>预约日期</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>联系方式</label>
+                    <input type="tel" placeholder="请输入手机号码" required>
+                </div>
+                <button type="submit" class="btn-submit">提交预约</button>
+            </form>
+        </section>
+
+        <section class="portfolio-section">
+            <h2>作品展示</h2>
+            <div class="portfolio-grid">
+                <!-- 作品展示将通过JavaScript动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="sub-footer">
+        <p>© 2025 昙华林旅行资讯</p>
+    </footer>
+
+    <!-- 浮动导航 -->
+    <div class="float-nav">
+        <button class="float-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="float-nav-menu">
+            <a href="../index.html" class="float-nav-item">
+                <i class="fas fa-home"></i>首页
+            </a>
+            <a href="culture.html" class="float-nav-item">
+                <i class="fas fa-landmark"></i>风土人情
+            </a>
+            <a href="photo.html" class="float-nav-item active">
+                <i class="fas fa-camera"></i>摄影服务
+            </a>
+            <a href="news.html" class="float-nav-item">
+                <i class="fas fa-newspaper"></i>最新活动
+            </a>
+            <a href="contact.html" class="float-nav-item">
+                <i class="fas fa-envelope"></i>联系我们
+            </a>
+        </div>
+    </div>
+
+    <!-- 保持原有的脚本引用 -->
+    <script src="../js/utils/helpers.js"></script>
+    <script src="../js/components/floatNav.js"></script>
+    <script src="../js/photo.js"></script>
+    <script>
+        new FloatNav();
+    </script>
+</body>
+</html>

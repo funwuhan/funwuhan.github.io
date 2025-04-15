@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频专区 - 昙华林旅行资讯</title>
+    <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="sub-header">
+        <a href="../index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> 返回首页
+        </a>
+        <h1>昙华林视频专区</h1>
+        <p>直观感受老街魅力</p>
+    </header>
+
+    <main class="video-content">
+        <section class="video-categories">
+            <button class="category-btn active" data-category="all">全部视频</button>
+            <button class="category-btn" data-category="guide">街区导览</button>
+            <button class="category-btn" data-category="food">美食探店</button>
+            <button class="category-btn" data-category="culture">文化活动</button>
+        </section>
+
+        <section class="video-grid">
+            <article class="video-card">
+                <div class="video-thumbnail">
+                    <img src="../images/video-thumb1.jpg" alt="视频缩略图">
+                    <span class="video-duration">05:30</span>
+                </div>
+                <div class="video-info">
+                    <h3>昙华林街区导览</h3>
+                    <p>跟随我们的镜头，探索昙华林的每个角落</p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-eye"></i> 1.2万</span>
+                        <span><i class="fas fa-thumbs-up"></i> 856</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="load-more">
+            <button id="loadMoreBtn" class="btn-load-more">
+                加载更多 <i class="fas fa-spinner fa-spin" style="display: none;"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer class="sub-footer">
+        <p>© 2025 昙华林旅行资讯</p>
+    </footer>
+
+    <!-- 在 footer 后，body 结束标签前添加 -->
+        <script src="../js/utils/helpers.js"></script>
+        <script src="../js/components/floatNav.js"></script>
+        <script src="../js/video.js"></script>
+        <script>
+            new FloatNav();
+        </script>
+    </body>
+    </html>

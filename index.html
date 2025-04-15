@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昙华林旅行资讯</title>
+    <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>昙华林旅行资讯</h1>
+            <p>探索武汉最富有人文气息的百年老街</p>
+        </div>
+        <div class="header-wave"></div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="pages/cultural.html" class="nav-item">
+                <i class="fas fa-landmark"></i>
+                <span>风土人情</span>
+            </a>
+            <a href="pages/stories.html" class="nav-item">
+                <i class="fas fa-book-open"></i>
+                <span>奇闻趣事</span>
+            </a>
+            <a href="pages/business.html" class="nav-item">
+                <i class="fas fa-store"></i>
+                <span>创业经历</span>
+            </a>
+            <a href="pages/events.html" class="nav-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>最新活动</span>
+            </a>
+            <a href="pages/photo.html" class="nav-item">
+                <i class="fas fa-camera"></i>
+                <span>摄影服务</span>
+            </a>
+            <a href="pages/messages.html" class="nav-item">
+                <i class="fas fa-comments"></i>
+                <span>留言墙</span>
+            </a>
+            <a href="pages/video.html" class="nav-item">
+                <i class="fas fa-video"></i>
+                <span>视频专区</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- 特色内容预览 -->
+        <section class="featured-section">
+            <h2>精选内容</h2>
+            <div class="featured-grid">
+                <article class="feature-card">
+                    <div class="card-content">
+                        <h3>昙华林的前世今生</h3>
+                        <p>探索这条百年老街的历史变迁，感受武汉独特的市井文化...</p>
+                        <a href="pages/cultural.html" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-content">
+                        <h3>老街创业故事</h3>
+                        <p>听听那些在昙华林扎根的创业者们的故事...</p>
+                        <a href="pages/business.html" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-content">
+                        <h3>本周活动预告</h3>
+                        <p>不要错过昙华林的精彩活动，等你来参与...</p>
+                        <a href="pages/events.html" class="read-more">查看详情</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 快速导航 -->
+        <section class="quick-nav">
+            <h2>快速导航</h2>
+            <div id="map" class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>加载地图中...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新留言 -->
+        <section class="latest-messages">
+            <h2>最新留言</h2>
+            <div id="message-preview" class="message-grid"></div>
+            <a href="pages/messages.html" class="btn-primary">查看更多留言</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" title="微信公众号：昙华林">
+                    <i class="fab fa-weixin"></i>
+                </a>
+                <a href="#" title="微博">
+                    <i class="fab fa-weibo"></i>
+                </a>
+            </div>
+            <p>© 2025 昙华林旅行资讯 | 关注微信公众号：昙华林</p>
+        </div>
+    </footer>
+
+    <!-- 浮动导航 -->
+    <div class="float-nav">
+        <button class="float-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="float-nav-menu">
+            <a href="index.html" class="float-nav-item active">
+                <i class="fas fa-home"></i>首页
+            </a>
+            <a href="pages/culture.html" class="float-nav-item">
+                <i class="fas fa-landmark"></i>风土人情
+            </a>
+            <a href="pages/photo.html" class="float-nav-item">
+                <i class="fas fa-camera"></i>摄影服务
+            </a>
+            <a href="pages/news.html" class="float-nav-item">
+                <i class="fas fa-newspaper"></i>最新活动
+            </a>
+            <a href="pages/contact.html" class="float-nav-item">
+                <i class="fas fa-envelope"></i>联系我们
+            </a>
+        </div>
+    </div>
+
+    <script src="js/utils/helpers.js"></script>
+    <script src="js/components/floatNav.js"></script>
+    <script>
+        new FloatNav();
+    </script>
+</body>
+</html>

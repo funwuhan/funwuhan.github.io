@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新活动 - 昙华林旅行资讯</title>
+    <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="sub-header">
+        <a href="../index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> 返回首页
+        </a>
+        <h1>昙华林活动日历</h1>
+        <p>不要错过每一个精彩瞬间</p>
+    </header>
+
+    <main class="events-content">
+        <section class="calendar-section">
+            <div class="calendar-header">
+                <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                <h2 id="currentMonth">2025年1月</h2>
+                <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div id="calendar" class="calendar-grid"></div>
+        </section>
+
+        <section class="upcoming-events">
+            <h2>近期活动</h2>
+            <div class="event-list">
+                <article class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">1月</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>新年集市</h3>
+                        <p>传统手工艺品展示与售卖</p>
+                        <span class="event-time"><i class="far fa-clock"></i> 10:00-18:00</span>
+                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> 昙华林步行街</span>
+                    </div>
+                    <button class="btn-register">报名参加</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="sub-footer">
+        <p>© 2025 昙华林旅行资讯</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/calendar.js"></script>
+
+    <!-- 在 footer 后，body 结束标签前添加 -->
+        <script src="../js/utils/helpers.js"></script>
+        <script src="../js/components/floatNav.js"></script>
+        <script src="../js/events.js"></script>
+        <script>
+            new FloatNav();
+        </script>
+</body>
+</html>
